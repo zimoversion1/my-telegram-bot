@@ -11,7 +11,7 @@ source_groups = [-1002475027155, -1003562918575, -1002151004457]
 target_group = 'https://t.me/+raPEpk9bIpIyMWE1'
 
 client = TelegramClient('my_session', api_id, api_hash)
-is_running = False
+is_running = True # False အစား True ပြောင်းလိုက်ပါ
 
 print(f"Source Group {len(source_groups)} ခုကို စောင့်ကြည့်ဖို့ ပြင်ဆင်နေပါတယ်...")
 
@@ -45,4 +45,5 @@ async def main():
     await client.run_until_disconnected()
 
 if __name__ == '__main__':
+
     asyncio.run(main())
